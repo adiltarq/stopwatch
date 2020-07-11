@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Stopwatch</title>
 </head>
 <body>
     <div class="main">
         <h1>Stop Watch</h1>
-        <h2 id="min">0</h2>
-        <h2 id="sec">0</h2>
-        <h2 id="msec">0</h2>
-        <button onclick="start()" id="start" >Start</button>
-        <button onclick="stop()">Stop</button>
-        <button onclick="reset()">Reset</button>
+        <div class="timer">
+        <h2>
+        <span  id="min" >0</span> :
+        <span  id="sec" >0</span> :
+        <span class="span3" > <p class="mmsec"  id="msec" >0</p> </span> 
+        </h2>
+    </div>
+        <br>
+        <button onclick="start()" id="start" ><i class="fa fa-play"></i></button>
+        <button onclick="stop()" id="stop" disabled><i class="fa fa-pause"></i> </button>
+        <button onclick="reset()"><i class="fa fa-stop"></i></button>
     </div>
 </body>
 <script src="app.js"></script>

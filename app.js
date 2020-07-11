@@ -24,10 +24,12 @@ function show(){
 function start(){
     interval = setInterval(show,10)
     document.getElementById("start").disabled = true;
+    document.getElementById("stop").disabled = false;
 }
 function stop(){
     clearInterval(interval)
     document.getElementById("start").disabled = false;
+    document.getElementById("stop").disabled = true;
 }
 function reset(){
     min = 0;
