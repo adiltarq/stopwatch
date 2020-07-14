@@ -25,11 +25,18 @@ function start(){
     interval = setInterval(show,10)
     document.getElementById("start").disabled = true;
     document.getElementById("stop").disabled = false;
+    document.getElementById("start").className = "not"
+    document.getElementById("stop").className = "allow";
+
 }
 function stop(){
     clearInterval(interval)
     document.getElementById("start").disabled = false;
     document.getElementById("stop").disabled = true;
+    document.getElementById("start").className = "allow "
+    document.getElementById("stop").className = "not";
+
+
 }
 function reset(){
     min = 0;
