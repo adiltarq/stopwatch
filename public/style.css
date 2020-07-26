@@ -59,5 +59,13 @@ button:hover > i{
 }
 .allow{
     cursor: pointer;
-
+}
+@media screen and (max-width: 550px){
+    .timer{
+        width: 90% !important;
+    }
+    h1{
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
 }
